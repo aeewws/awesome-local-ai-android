@@ -32,19 +32,19 @@ Android has become a practical place to experiment with on-device AI, lightweigh
 - [Termux:Tasker](https://github.com/termux/termux-tasker) - Connect Termux scripts to Tasker automations.
 - [Termux:X11](https://github.com/termux/termux-x11) - X server add-on for graphical Linux apps inside Termux.
 - [Acode](https://github.com/Acode-Foundation/Acode) - Lightweight Android code editor with a strong plugin ecosystem.
-- [AndroidIDE](https://github.com/AndroidIDEOfficial/AndroidIDE) - Full-featured IDE for developing Android apps on-device.
+- [AndroidIDE](https://github.com/AndroidIDEOfficial/AndroidIDE) - Full-featured IDE for developing Android apps on-device. Archived upstream; keep that maintenance status in mind before adopting it as a primary workflow.
 - [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery) - Experimental local model gallery for on-device ML and GenAI demos.
 - [PocketPal AI](https://github.com/a-ghorbani/pocketpal-ai) - Local LLM chat app for downloading, loading, and benchmarking models on mobile.
 
 ## Local Runtimes And Inference Stacks
 
-- [llama.cpp](https://github.com/ggerganov/llama.cpp) - Popular C/C++ inference engine for running quantized models locally.
+- [llama.cpp](https://github.com/ggml-org/llama.cpp) - Popular C/C++ inference engine for running quantized models locally.
 - [MLC LLM](https://github.com/mlc-ai/mlc-llm) - Universal deployment engine for compiling and running LLMs across mobile platforms.
 - [ExecuTorch](https://github.com/pytorch/executorch) - PyTorch's on-device runtime for mobile, embedded, and edge targets.
 - [ONNX Runtime](https://github.com/microsoft/onnxruntime) - Cross-platform inference runtime with Android support.
 - [ONNX Runtime GenAI](https://github.com/microsoft/onnxruntime-genai) - Generative AI extensions for ONNX Runtime.
 - [MediaPipe](https://github.com/google-ai-edge/mediapipe) - Cross-platform ML and on-device media pipelines, including Android-ready solutions.
-- [AI Edge Torch](https://github.com/google-ai-edge/ai-edge-torch) - Convert PyTorch models for on-device execution with the Google AI Edge stack.
+- [LiteRT Torch](https://github.com/google-ai-edge/litert-torch) - Convert PyTorch models for on-device execution with the Google AI Edge stack.
 - [LiteRT](https://github.com/google-ai-edge/LiteRT) - Google's on-device framework for high-performance mobile ML and GenAI deployment.
 
 ## Termux And Mobile Workflow Tools
