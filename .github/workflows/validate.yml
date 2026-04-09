@@ -1,0 +1,47 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  markdown-links:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate local Markdown links
+        run: |
+          python - <<'PY'
+          import pathlib
+          import re
+
+          root = pathlib.Path('.').resolve()
+          pattern = re.compile(r'!?\[[^\]]*\]\(([^)]+)\)')
+          missing = []
+
+          for md in root.rglob('*.md'):
+              text = md.read_text(encoding='utf-8', errors='ignore')
+              for raw in pattern.findall(text):
+                  target = raw.strip()
+                  if not target or target.startswith(('http://', 'https://', 'mailto:', '#')):
+                      continue
+                  target = target.split('#', 1)[0]
+                  if target.startswith('<') and target.endswith('>'):
+                      target = target[1:-1]
+                  if target.startswith('/'):
+                      continue
+                  path = (md.parent / target).resolve()
+                  if not path.exists():
+                      missing.append(f"{md.relative_to(root)} -> {target}")
+
+          if missing:
+              raise SystemExit("Missing local Markdown targets:\n" + "\n".join(missing))
+          PY
