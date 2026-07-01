@@ -35,6 +35,7 @@ Android has become a practical place to experiment with on-device AI, lightweigh
 - [AndroidIDE](https://github.com/AndroidIDEOfficial/AndroidIDE) - Full-featured IDE for developing Android apps on-device. Archived upstream; keep that maintenance status in mind before adopting it as a primary workflow.
 - [Google AI Edge Gallery](https://github.com/google-ai-edge/gallery) - Experimental local model gallery for on-device ML and GenAI demos.
 - [PocketPal AI](https://github.com/a-ghorbani/pocketpal-ai) - Local LLM chat app for downloading, loading, and benchmarking models on mobile.
+- [Twent](https://github.com/Unselfisheologism/Twent) - Agentic Android app with local-model support (or BYOK), Linux Terminal, UI Automation, MCP, Agentic memory, Knowledge base, mini-apps, genUI, Bots, Subagents, etc.
 
 ## Local Runtimes And Inference Stacks
 
