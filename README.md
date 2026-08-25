@@ -55,6 +55,7 @@ Android has become a practical place to experiment with on-device AI, lightweigh
 - [tmux](https://github.com/tmux/tmux) - Terminal multiplexer for keeping long-lived sessions alive on mobile devices.
 - [fzf](https://github.com/junegunn/fzf) - Fuzzy finder that makes terminal navigation and selection much easier.
 - [ripgrep](https://github.com/BurntSushi/ripgrep) - Fast recursive search tool for code, notes, and config on-device.
+- [Molfar System](https://molfar.nova-hata.com/?lang=en) - Multi-model AI meeting app for Android; BYOK, no backend, built entirely on-device.
 
 ## Docs, Lists, And Related Projects
 
